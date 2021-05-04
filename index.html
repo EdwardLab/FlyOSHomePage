@@ -1,23 +1,83 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>FlyOS 官方网站</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4336563652165904" crossorigin="anonymous"></script>
-<script data-ad-client="ca-pub-4336563652165904" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
-<amp-auto-ads type="adsense" data-ad-client="ca-pub-4336563652165904"></amp-auto-ads>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-</head>
-<body>
-<div id="content"></div>
-<script>
-    $.get('../home.md', function(response, status, xhr){
-        $("#content").html(marked(response));
-    });
-</script>
+    <head>
+        <title>FlyOS 官方网站</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4336563652165904" crossorigin="anonymous"></script>
+        <script data-ad-client="ca-pub-4336563652165904" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+        <amp-auto-ads type="adsense" data-ad-client="ca-pub-4336563652165904"></amp-auto-ads>
+        <style>
+        body {
+            margin-left: 3%;
+        }
+	.screenshot img {
+            width: 100%;
+	}
+        </style>
+    </head>
+    <body>
+        <div>
+            <img src="https://img.shields.io/github/stars/xingyujie/flyos.svg" alt="Github stars">
+            <img src="https://img.shields.io/github/forks/xingyujie/flyos.svg" alt="Github forks">
+        </div>
+        <div class="introduction">
+            <h1>介绍</h1>
+            <p>FlyOS是安卓手机的一款神器，极客的宝贝</p>
+            <p>原汁原味的完整Linux系统</p>
+            <p>FlyOS Console:(主功能)</p>
+            <ul>
+                <li>Web面板(一键手机建站)</li>
+                <li>web部署原汁原味的GNU/Linux发行版</li>
+                <li>在线web友好创建虚拟机面板</li>
+                <li>支持小白一键部署各类系统</li>
+                <li>使用FlyChat聊天</li>
+                <li>使用web在线管理手机的功能，远程遥控</li>
+                <li>可以使用flyosx86wine或虚拟机跑Windows(EXE,MSI)应用程序</li>
+                <li>一键安装软件包</li>
+                <li>开发人工智能项目</li>
+                <li>部署GUI环境</li>
+                <li>网络安全测试</li>
+            </ul>
+        </div>
+        <div class="install">
+            <h1>安装</h1>
+            <ol>
+                <li>安装<a href="http://f-droid.org/en/packages/com.termux/">termux</a>并打开</li>
+                <li>在Termux中输入:<kbd>curl -L http://flyosgeek.com/gosetup.sh | bash</kbd>并回车</li>
+            </ol>
+        </div>
+        <div class="quickstart">
+            <h1>快速开始</h1>
+            <p>flyos在termux高级终端中运行，简单易用，因此您无需太多配置</p>
+            <p>安装完成后输入exit，再次打开我们会进行初始化，浏览器访问相应显示地址即可完成配置，配置成功后，flyos将会自启动。配置完成后简单易用，有点水平都能看懂（初中生开发，相信你的水平也不差）</p>
+        </div>
+        <div>
+            <div>
+                <h1>FlyOS的由来</h1>
+                <p>作者本人上小学的时候父母不让我用电脑，因此对计算机学习产生了很大的阻碍，并产生疑问能否在手机运行pc系统，达到无需电脑使用桌面程序？今天他来了，flyos就是多年来的研究成果。flyos最早是rom包，但由于很多问题，转向了termux的使用</p>
+            </div>
+            <div>
+                <h1>FlyOS到底是不是系统？为啥有个os？</h1>
+                <p>FlyOS有人说并非os，但FlyOS可以说是termux的linux发行版之一（指data下面的rootfs改造），所以他是os，FlyOS并不像其他的脚本一样，只是单一的文件，没有依赖。并且在flyos的由来章节中提到，FlyOS最早是rom，所以我们并没有改变这个名字，但他现在本身也是os。</p>
+            </div>
+        </div>
+        <div class="about">
+            <h1>关于</h1>
+            <p>开发者:邢宇杰(XingYuJie) 和很多无私的奉献者。刚上初中的初中生一枚，开发者全是初中生和小学生。创始人是计算机爱好者（幼儿园中班开始玩winxp），感谢广大开发者对flyos的支持！！！</p>
+            <p>软件通过GPL-V3.0协议发布，请遵守此协议 软件受地区法律保护</p>
+	    <p>QQ交流群:<a href="https://jq.qq.com/?_wv=1027&k=Gd5z9j7v">814113230</a></p>
+	    <p>Telegram交流群:t.me/flyospro(@flyospro)</p>
+        </div>
+	<div class="screenshot">
+            <img src="/img/screenshot.jpg" alt="FlyOS使用截图">
+	    <img src="/img/panel.jpg" alt="FlyOS面板">
+	    <img src="/img/deploy.jpg" alt="FlyOS Linux容器部署">
+	    <img src="/img/vm1.jpg" alt="FlyOS虚拟机">
+	</div>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 </body>
 </html>
