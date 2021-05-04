@@ -3,26 +3,17 @@
 <head>
 <title>FlyOS 官方网站</title>
 <meta charset="utf-8">
-<style>
-#content img{
-width: 100%;
-}
-</style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4336563652165904"
-     crossorigin="anonymous"></script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4336563652165904" crossorigin="anonymous"></script>
+<script data-ad-client="ca-pub-4336563652165904" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+<amp-auto-ads type="adsense" data-ad-client="ca-pub-4336563652165904"></amp-auto-ads>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
 <div id="content"></div>
-<script data-ad-client="ca-pub-4336563652165904" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-</script>
-<amp-auto-ads type="adsense"
-        data-ad-client="ca-pub-4336563652165904">
-</amp-auto-ads>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
     $.get('../home.md', function(response, status, xhr){
         $("#content").html(marked(response));
