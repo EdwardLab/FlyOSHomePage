@@ -2,6 +2,7 @@
 echo "安装将会清除所有数据, 请确认已备份重要数据"
 read -p "按下回车继续" _
 echo "[*] 安装依赖"
+pkg update
 pkg install wget git -y
 echo "[*] 下载文件"
 rm -rf $PREFIX/tmp/flyos.tar.gz
