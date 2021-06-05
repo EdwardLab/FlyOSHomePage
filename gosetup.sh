@@ -2,8 +2,8 @@
 echo "安装将会清除所有数据, 请确认已备份重要数据"
 read -p "按下回车继续" _
 echo "[*] 安装依赖"
-apt update -y
-apt install wget git -y
+pkg update -y
+pkg install wget git -y
 echo "[*] 下载文件"
 rm -rf $PREFIX/tmp/flyos.tar.gz
 wget --show-progress -q "https://xingyujie-my.sharepoint.com/:u:/g/personal/xingyujie_xingyujie_onmicrosoft_com/EfqCU1iWEBtBloitHDxCTKcBYiMJ9bEiDVeAzEi6wPLSVA?e=ZdnmMV&download=1" -O $PREFIX/tmp/flyos.tar.gz
