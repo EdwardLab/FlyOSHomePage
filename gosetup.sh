@@ -13,6 +13,7 @@ cd $PREFIX/../
 tar -zxvf $PREFIX/tmp/flyos.tar.gz --recursive-unlink --preserve-permissions
 echo "[*] 更新系统"
 cd $PREFIX/etc/flyos
+git checkout dev
 git pull
 pip install -r requirements.txt
 echo "[+] 安装完成, 请重启termux"
