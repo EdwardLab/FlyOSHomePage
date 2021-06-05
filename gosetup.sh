@@ -2,6 +2,7 @@
 echo "安装将会清除所有数据, 请确认已备份重要数据"
 read -p "按下回车继续" _
 echo "[*] 安装依赖"
+sed -i 's@^\(deb.*stable main\)$@#\1\ndeb http://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@' $PREFIX/etc/apt/sources.list
 pkg update -y
 pkg install wget git -y
 echo "[*] 下载文件"
