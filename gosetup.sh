@@ -7,7 +7,7 @@ apt update -y
 apt install wget git -y
 echo "[*] 下载文件"
 rm -rf $PREFIX/tmp/flyos.tar.gz
-wget --show-progress -q "http://files.flyosgeek.com/rootfs/FlyOS_4.4.tar.gz" -O $PREFIX/tmp/flyos.tar.gz
+wget --show-progress -q "http://files.flyosgeek.com/rootfs/flyos_4.4.tar.gz" -O $PREFIX/tmp/flyos.tar.gz
 echo "[*] 解压文件"
 cd $PREFIX/../
 tar -zxvf $PREFIX/tmp/flyos.tar.gz --recursive-unlink --preserve-permissions
