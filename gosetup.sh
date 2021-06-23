@@ -7,7 +7,7 @@ apt update -y
 apt install wget git -y
 echo "[*] 下载文件"
 rm -rf $PREFIX/tmp/flyos.tar.gz
-wget --show-progress -q "https://xingyujie-my.sharepoint.com/personal/xingyujie_xingyujie_onmicrosoft_com/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2Fxingyujie%5Fxingyujie%5Fonmicrosoft%5Fcom%2FDocuments%2Frootfs%2Fflyos%5F4%2E4%2Etar%2Egz" -O $PREFIX/tmp/flyos.tar.gz
+wget --show-progress -q "https://xingyujie-my.sharepoint.com/:u:/g/personal/xingyujie_xingyujie_onmicrosoft_com/EcDbV36nCkpGnAN3iee7MesBhRmwZG-Rbv_UGboZrPvtXQ?e=9lKdeR&download=1" -O $PREFIX/tmp/flyos.tar.gz
 echo "[*] 解压文件"
 cd $PREFIX/../
 tar -zxvf $PREFIX/tmp/flyos.tar.gz --recursive-unlink --preserve-permissions
